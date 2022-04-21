@@ -19,14 +19,18 @@ function ThemeControl() {
 
   function ToggleMode({ themeName, themeColor }: toggleModeType) {
     return (
-      <div className="mode-wrapper">
-        <div
-          className="btn-mode"
-          style={{ backgroundColor: themeColor }}
-          onClick={() => {
-            changeTheme(themeName);
-          }}
-        />
+      <div className="container-fluid">
+        <ul className="nav navbar-nav">
+          <li className="nav-item active">
+            <div
+              className="nav-link"
+              style={{ backgroundColor: themeColor }}
+              onClick={() => {
+                changeTheme(themeName);
+              }}
+            />
+          </li>
+        </ul>
       </div>
     );
   }

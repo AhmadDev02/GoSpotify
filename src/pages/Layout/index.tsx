@@ -4,14 +4,14 @@ import { selectToken } from '../../redux/tokenSlice';
 import Menu from '../../components/Home/Menu';
 import Home from '../Home/Home';
 import PlaylistPage from '../Playlist';
-import SearchPage from '../Search';
 import NewForm from '../Playlist/NewForm';
 import { spotifyPageType } from '../../libs/types';
 import { rootUrl } from '../../libs/values';
+import FooterPage from '../../components/footer/footer';
 
 const axios = require('axios');
 
-function Layout({ page } : spotifyPageType) {
+function Layout({ page }: spotifyPageType) {
   const token = useSelector(selectToken);
   const [view, setView] = useState(page);
   const [theme, setTheme] = useState(localStorage.getItem('theme'));
@@ -20,10 +20,6 @@ function Layout({ page } : spotifyPageType) {
     {
       url: 'home',
       page: <Home />,
-    },
-    {
-      url: 'search',
-      page: <SearchPage />,
     },
     {
       url: 'playlists',
@@ -72,17 +68,23 @@ function Layout({ page } : spotifyPageType) {
   return (
     <div className="main">
 
-      <div className="menu-section">
-        <Menu
-          view={view}
-          setView={setView}
-        />
+      <div>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light ">
+          <Menu
+            view={view}
+            setView={setView}
+          />
+        </nav>
       </div>
 
       <div className="page-section">
         <div className="page-wrapper">
           <Page />
         </div>
+      </div>
+
+      <div>
+        <FooterPage />
       </div>
     </div>
   );

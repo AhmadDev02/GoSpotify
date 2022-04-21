@@ -21,16 +21,11 @@ function AppRouter() {
     },
     {
       id: 2,
-      url: '/search',
-      page: <Layout page="search" />,
-    },
-    {
-      id: 3,
       url: '/playlists',
       page: <Layout page="playlists" />,
     },
     {
-      id: 4,
+      id: 3,
       url: '/new',
       page: <Layout page="new_playlist" />,
     },

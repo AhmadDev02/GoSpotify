@@ -3,7 +3,7 @@ import {
   clientID,
   scope,
   redirectUri,
-  // publicUrl,
+  publicUrl,
 } from '../../libs/values';
 import './style.css';
 
@@ -40,6 +40,12 @@ function LoginPage() {
   return (
     <div className="login-page">
       <div className="login-card">
+        <div className="image">
+          <img
+            src={publicUrl + '/img/Spotify_Black.png'}
+            alt="Icon"
+          />
+        </div>
         <LoginButton />
       </div>
     </div>
