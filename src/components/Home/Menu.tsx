@@ -6,7 +6,6 @@ import { menuType } from '../../libs/types';
 import { setUser, selectUser } from '../../redux/userSlice';
 import { selectToken } from '../../redux/tokenSlice';
 import { publicUrl } from '../../libs/values';
-import ThemeControl from './ThemeControl';
 
 function Menu({ view, setView }: menuType) {
   const dispatch = useDispatch();
@@ -119,9 +118,6 @@ function Menu({ view, setView }: menuType) {
           </ul>
         </div>
       ))}
-      <div>
-        <ThemeControl />
-      </div>
       <div>
         {user && <UserCard />}
       </div>

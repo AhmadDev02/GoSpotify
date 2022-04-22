@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# Go Spotify Clone Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deskripsi
 
-## Available Scripts
+Go Spotify Clone merupakan sebuah project aplikasi dari api <a href="https://developer.spotify.com/">Spotify</a> dan di modifikasi menjadi sebuah aplikasi yang berbentuk pencarian lagu dan create playlist. Project ini dibuat secara during bersama team Generasi GIGIH 2022 program by GOTO organisasi, <a href="https://www.anakbangsabisa.org/">Yayasan Anak Bangsa Bisa</a>
 
-In the project directory, you can run:
+### Fitur-Fitur
 
-### `npm start`
+- Login with Spotify account
+- User profile
+- Picture Profile
+- Nav Bar
+- Search tracks
+- List user's playlists
+- Create new playlist
+- Playlist detail
+- List all tracks in a playlist
+- Track detail
+- Footer
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Stacks
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Create-react-app, React, Typescript,Test  JS
+- Styling: CSS, FontAwesome Icons, Boostrap 5, Mdb, Twailind.
+- State management: Redux
+- Testing: Jest, Testing-Library, MSW
+- Linter: ESLint
+- Deployment: Vercel
 
-### `npm test`
+## Penggunaan Repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Git Clone The Repo
 
-### `npm run build`
+```
+git clone
+https://github.com/AhmadDev02/GoSpotify.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Buka comand kamu di clone project gospotify
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+cd spotify
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Package Yang kamu harus didownload apabila kamu membuat file project js atau bisa configuration dengan repo yang kamu download tadi
 
-### `npm run eject`
+```
+- npm install -D tailwindcss postcss autoprefixer
+- npm i redux
+- npm i axios
+- npm install -D typescript @types/jest @types/react @types/react-native @types/react-test-renderer
+- npm install react-redux @reduxjs/toolkit
+- npm install react-router-dom@5.3.0 
+- npm install eslint --save-dev
+- npm i @reduxjs/toolkit 
+- npm audit fix --force
+- npm instal eslint-plugin-react-hooks --save-dev
+- npm i mdb-react-ui-kit
+- npm install --save mdbreact
+- npm install --save jquery popper.js
+- npm i styled-components react-icons
+- npm i react-bootstrap
+- npm install react-bootstrap bootstrap
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Menjalankan Program nya
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+npm start 
+or 
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Cara Configurasi Testing
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Instal
 
-## Learn More
+```
+- npm i --save-dev @testing-library/jest-dom
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+2. Memasukan jest kedalam .eslintrc.json
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+Menambahkan jest nya di dalam "env"
+- "jest": true
+```
 
-### Code Splitting
+3. Kemudian menambahkan file import jest-dom ke dalam file test.js
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+import '@testing-library/jest-dom';
+```
 
-### Analyzing the Bundle Size
+4. Menjalankan Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+npm test
+```
 
-### Making a Progressive Web App
+<table>
+  <tr>
+    <td>
+      <img src="img/Testing.png">
+    </td>
+  </tr>
+</table>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Hasil Akhir
 
-### Advanced Configuration
+<table>
+  <tr>
+    <td>
+      <img src="img/HasilAkhir.png">
+    </td>
+  </tr>
+</table>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Terima kasih
