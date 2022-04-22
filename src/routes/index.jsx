@@ -37,6 +37,9 @@ function AppRouter() {
         <Route path="/login" exact={true} component={LoginPage} />
         <Route path="/callback" exact={true} component={Callback} />
         <Route path="/logout" exact={true} component={Logout} />
+        <Route path="/home">
+          {routeList}
+        </Route>
 
         {routeList.map((item) => (
           <Route path={item.url} exact={true} key={item.id}>
