@@ -27,6 +27,14 @@ Go Spotify Clone merupakan sebuah project aplikasi dari api <a href="https://dev
 - Linter: ESLint
 - Deployment: Vercel
 
+## Cara membuat react native
+
+```
+npx create-react-app myapp
+kemudian 
+cd myapp
+```
+
 ## Penggunaan Repository
 
 1. Git Clone The Repo
@@ -69,6 +77,30 @@ cd spotify
 npm start 
 or 
 yarn start
+```
+
+## Note For .env
+
+1. Jika Anda buka dilocal host maka anda wajib mengubah
+
+```
+REACT_APP_ROOT_URL=http://localhost:3000 
+
+
+dan 
+
+
+REACT_APP_REDIRECT_URL=http://localhost:3000/callback
+```
+
+2. Jika Anda ingin membuka aplikasi nya ke vercel maka anda harus mengubah ke
+
+```
+REACT_APP_ROOT_URL=https://go-spotify.vercel.app/
+
+dan 
+
+REACT_APP_REDIRECT_URL=https://go-spotify.vercel.app/callback
 ```
 
 ## Cara Configurasi Testing
